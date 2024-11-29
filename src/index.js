@@ -14,7 +14,8 @@ const port = 5000;
 const corsOptions = {
   origin: [
     'http://localhost:3000', // URL do seu frontend local
-    'https://cacaprecob.onrender.com' // URL do seu aplicativo web no Firebase
+    'https://cacaprecob.onrender.com', // URL do seu aplicativo web no Firebase
+    'https://cacapreco.vercel.app'
   ],
   methods: 'GET,HEAD,PUT,PATCH,POST,DELETE', // Permite todos os métodos
   allowedHeaders: 'Content-Type,Authorization', // Permite cabeçalhos importantes
