@@ -1,5 +1,6 @@
 const express = require('express');
 const cors = require('cors');
+const bodyParser = require('body-parser');
 const produtoRoutes = require('./routes/produtoRoutes');
 const supermercadoRoutes = require('./routes/supermercadoRoutes');
 const usuarioRoutes = require('./routes/usuarioRoutes');
@@ -21,8 +22,8 @@ const corsOptions = {
 };
 
 
-app.use(cors());
-app.use(express.json());
+app.use(cors(corsOptions));
+app.use(bodyParser.json());
 
 // Rotas
 app.use('/usuarios', usuarioRoutes);
